@@ -1,6 +1,4 @@
-// Future versions of Hyper may add additional config options,
-// which will not automatically be merged into this file.
-// See https://hyper.is#cfg for all currently supported options.
+// Settings I use for Hyper. Mostly unchanged.
 
 module.exports = {
   config: {
@@ -140,17 +138,14 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
-  plugins: ["hyper-night-owl"],
+  // Plugins
+  plugins: [
+    'hyper-night-owl',
+    'hypercwd',
+    'hyperterm-tabs',
+    'hyper-search',
+  ],
 
-  // in development, you can create a directory under
-  // `~/.hyper_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
   localPlugins: [],
 
   keymaps: {
